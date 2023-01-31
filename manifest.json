@@ -1,0 +1,51 @@
+{
+  "name": "WikiDark",
+  "description": "Wikipedia Dark Mode",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "48": "images/icon_48.png",
+    "64": "images/icon_64.png",
+    "128": "images/icon_128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon_16.png",
+      "32": "images/icon_32.png",
+      "48": "images/icon_48.png",
+      "64": "images/icon_64.png",
+      "128": "images/icon_128.png"
+    }
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles/*", "images/*"],
+      "matches": [
+        "http://*.wikipedia.org/*",
+        "https://*.wikipedia.org/*"        
+      ]
+
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*.wikipedia.org/*",
+        "https://*.wikipedia.org/*"
+      ],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+  "permissions": [
+    "scripting"
+  ],
+  "host_permissions": [
+    "http://*.wikipedia.org/*",
+    "https://*.wikipedia.org/*"
+  ]
+}
