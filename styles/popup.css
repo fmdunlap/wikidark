@@ -1,0 +1,33 @@
+body {
+    background-color: #222222;
+    width: 15em;
+    height: auto;
+    padding: 1em;
+    border-radius: 10px;
+    outline: 4px solid #444444;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container {
+    width: 100%;
+    height: fit-content;
+    display:flex;
+    justify-content: space-around;
+}
+
+.title-moon {
+    height: 32px;
+    width: 32px;
+    fill: orange;
+    margin-inline-end: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: white;
+}
+
+select {
+    width: 100%;
+}

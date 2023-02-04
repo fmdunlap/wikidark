@@ -4,23 +4,24 @@
   "version": "1.0",
   "manifest_version": 3,
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "js/background.js"
   },
   "icons": {
-    "16": "images/icon_16.png",
-    "32": "images/icon_32.png",
-    "48": "images/icon_48.png",
-    "64": "images/icon_64.png",
-    "128": "images/icon_128.png"
+    "16": "images/moon_16.png",
+    "32": "images/moon_32.png",
+    "48": "images/moon_48.png",
+    "64": "images/moon_64.png",
+    "128": "images/moon_128.png"
   },
   "action": {
     "default_icon": {
-      "16": "images/icon_16.png",
-      "32": "images/icon_32.png",
-      "48": "images/icon_48.png",
-      "64": "images/icon_64.png",
-      "128": "images/icon_128.png"
-    }
+      "16": "images/moon_16.png",
+      "32": "images/moon_32.png",
+      "48": "images/moon_48.png",
+      "64": "images/moon_64.png",
+      "128": "images/moon_128.png"
+    },
+    "default_popup": "html/popup.html"
   },
   "web_accessible_resources": [
     {
@@ -38,11 +39,13 @@
         "http://*.wikipedia.org/*",
         "https://*.wikipedia.org/*"
       ],
-      "js": ["jquery.js", "script.js"]
+      "js": ["js/jquery.js", "js/applyStyle.js"]
     }
   ],
   "permissions": [
-    "scripting"
+    "scripting",
+    "storage",
+    "activeTab"
   ],
   "host_permissions": [
     "http://*.wikipedia.org/*",

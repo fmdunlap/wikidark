@@ -1,93 +1,35 @@
 :root {
-    --light-link-color: #d3c4a9;
-    --dark-link-color: #c0a97f;
+    /* General colors */
+    --primary-bg-color: #333;
+    --accent-bg-color: #555;
+    
+    /* TOC Colors */
+    --toc-bg-color: var(--accent-bg-color);
+    --toc-link-color: var(--dark-link-color);
+    --active-toc-link-color: #CCC;
+    --toc-hide-link-color: var(--dark-link-color);
+    --expanded-toc-parent-color: #CCC;
+    
+    /* Text colors */
     --text-color: #FFF;
-    --active-toc-color: #CCC;
-    --dark-bg-color: #333;
-    --light-bg-color: #444;
+    --hatnote-color: var(--text-color);
+    --main-title-color: var(--text-color);
+    --primary-link-color: #d3c4a9;
+    --dark-link-color: #c0a97f;
 
-}
+    /* Infobox Colors */
+    --infobox-background: #555;
+    
+    /* ReferenceList Colors */
+    --reflist-link-color: #c0a97f;
 
-.mw-page-container {
-    background-color: var(--dark-bg-color)
-}
-
-.vector-toc {
-    background-color: var(--light-bg-color)
-}
-
-.vector-toc .vector-toc-link {
-    color: var(--dark-link-color)
-}
-
-.vector-toc .vector-toc-list-item-active > .vector-toc-link, .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-expanded) > .vector-toc-link, .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > .vector-toc-link {
-    color: var(--active-toc-color)
-}
-
-.vector-pinnable-header-label {
-    color: var(--text-color);
-}
-
-.vector-pinnable-header-toggle-button {
-    color: var(--dark-link-color);
-}
-
-.vector-pinnable-header-toggle-button:before, .vector-pinnable-header-toggle-button:after { 
-    color: var(--active-toc-color)
-}
-
-.vector-toc-pinned #vector-toc-pinned-container .vector-toc:after {
-    display: none;
-}
-
-.vector-body-before-content {
-    color: var(--text-color)
-}
-
-.vector-menu-content-list > :not(.selected) > * > * {
-    color: var(--dark-link-color)
-}
-
-.vector-menu-content-list > .selected > * > * {
-    color: var(--text-color)
-}
-
-.hatnote .navigation-not-searchable {
-    color: var(--text-color)
-}
-
-.mw-parser-output > div, p, h1, h2, h3, h4, h5 {
-    color: var(--text-color)
-}
-
-.mw-parser-output > * > p, h1, h2, h3, h4, h5 {
-    color: var(--text-color)
-}
-
-.mw-parser-output > * > * > p, h1, h2, h3, h4, h5 {
-    color: var(--text-color)
-}
-
-.mw-parser-output > a {
-    color: var(--light-link-color)
-}
-
-.mw-parser-output > * > a {
-    color: var(--light-link-color)
-}
-
-.mw-parser-output > * > * > a {
-    color: var(--light-link-color)
-}
-
-.mw-parser-output > * > a.external, a.text {
-    color: var(--dark-link-color)
-}
-
-.mw-parser-output a.external {
-    background-image: url('chrome-extension://__MSG_@@extension_id__/images/link-external-small-ltr-progressive.svg');
-    background-position: center right;
-    background-repeat: no-repeat;
-    background-size: 0.857em;
-    padding-right: 1em;
+    /* Navbox */
+    --navbox-background: #555;
+    --navbox-border: #000;
+    --navbox-title-background: #727272;
+    --navbox-group-header-color: #7a6338;
+    --navbox-subgroup-header-color: #937845;
+    --navbox-subgroup-background-color: #666;
+    --navbox-subgroup-alt-background-color: #777;
+    --navbox-link-color: #d3c4a9;
 }
