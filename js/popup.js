@@ -1,6 +1,4 @@
-const DEFAULT_SETTINGS = {
-    'theme': 'default'
-}
+import * as settings from "/js/settings.js";
 
 function setSelectedTheme(themeName) {
     $('#theme-select').val(themeName);
@@ -10,17 +8,37 @@ function getSelectedTheme() {
     return $('#theme-select').val();
 }
 
-function setup() {
-    chrome.storage.sync.get(DEFAULT_SETTINGS).then(values => {
-        setSelectedTheme(values['theme'])
-    })
-    $(document).ready(() => {
-        $('#save').click(onSave)
+function saveTheme() {
+    settings.saveSettings({'theme': getSelectedTheme()});
+}
+
+function reloadWikiTabs() {
+    chrome.tabs.query({
+        url: [
+            "http://*.wikipedia.org/*",
+            "https://*.wikipedia.org/*"
+        ]
+    }).then((tabs) => {
+        console.log(tabs);
+        tabs.forEach(tab => {
+            chrome.tabs.reload(tab.id),
+            {
+                bypassCache: true
+            }
+        })
     })
 }
 
-function onSave() {
-    chrome.storage.sync.set({'theme': getSelectedTheme()});
+function setup() {
+    settings.getSyncSettings().then(values => {
+        setSelectedTheme(values['theme'])
+    })
+    $(document).ready(() => {
+        $('#theme-select').on('change', () => {
+            saveTheme();
+            reloadWikiTabs();
+        })
+    })
 }
 
 setup()
