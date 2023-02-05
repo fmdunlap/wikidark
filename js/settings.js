@@ -20,5 +20,4 @@ export default {
     getSyncSettings,
     saveSyncSettings,
     saveTheme
-
 };
