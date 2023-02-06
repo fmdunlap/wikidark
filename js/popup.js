@@ -2,11 +2,11 @@ import settings from "/js/settings.js";
 import { themes } from "./themes.js";
 
 function setSelectedTheme(themeName) {
-    $('#theme-select').val(themeName);
+    $('input:radio[name=theme-radio]').filter('[value="' + themeName + '"]').prop('checked', true);
 }
 
 function getSelectedTheme() {
-    return $('#theme-select').val();
+    return $('input:radio[name=theme-radio]:checked').val();
 }
 
 function reloadWikiTabs() {
@@ -17,24 +17,24 @@ function reloadWikiTabs() {
         ]
     }).then((tabs) => {
         tabs.forEach(tab => {
-            chrome.tabs.reload(tab.id),
-            {
-                bypassCache: true
-            }
+            chrome.tabs.reload(tab.id)
         })
     })
 }
 
 function setup() {
     themes.forEach((theme) => {
-        console.log(theme)
-        $('<option value="' + theme.name + '">' + theme.name + '</option>').appendTo($('#theme-select'));
+        let themeRadioDiv = $('<div class="theme-radio-entry">')
+        themeRadioDiv.append($('<input type="radio" id="' + theme.name + '" name="theme-radio" value="' + theme.name + '">'));
+        themeRadioDiv.append($('<label for="' + theme.name + '">' + theme.name + '</label>'));
+        themeRadioDiv.append($('</div>'));
+        $('#theme-radio-container').append(themeRadioDiv);
     });
     settings.getSyncSettings().then(values => {
         setSelectedTheme(values['theme'])
     })
     $(document).ready(() => {
-        $('#theme-select').on('change', () => {
+        $('input[type=radio][name=theme-radio]').on('change', () => {
             settings.saveTheme(getSelectedTheme());
             reloadWikiTabs();
         })

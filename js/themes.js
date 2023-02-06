@@ -53,7 +53,7 @@ export const themes = [{
     }
 },
 {
-    name: 'github dark',
+    name: 'Github Dark',
     colorCodes: {
         "primary-bg-color": "#21262E",
         "accent-bg-color": "#434C56",
