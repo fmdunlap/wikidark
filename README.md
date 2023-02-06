@@ -133,12 +133,11 @@ To switch between themes, simply click the WikiDark icon and select a different 
 ## Roadmap
 
 - [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Finish implementation of existing color themes
+- [ ] More themes!
+- [ ] Add instructions for how to develop themes
+- [ ] Allow users to upload theme files to use in the extension
+- [ ] Built-in theme builder for creating themes within the extension
 
 See the [open issues](https://github.com/fmdunlap/wikidark/issues) for a full list of proposed features (and known issues).
 
