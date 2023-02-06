@@ -133,7 +133,7 @@ To switch between themes, simply click the WikiDark icon and select a different 
 ## Roadmap
 
 - [x] Add Changelog
-- [ ] Finish implementation of existing color themes
+- [x] Finish implementation of existing color themes
 - [ ] More themes!
 - [ ] Add instructions for how to develop themes
 - [ ] Allow users to upload theme files to use in the extension
