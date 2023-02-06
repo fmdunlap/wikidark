@@ -152,6 +152,10 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     color: var(--navbox-link-color);
 }
 
+.navbox {
+    color: var(--navbox-text);
+}
+
 .mw-parser-output .navbox-title {
     background-color: var(--navbox-title-background) !important;
 }
