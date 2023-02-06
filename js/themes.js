@@ -23,6 +23,12 @@ export const themes = [{
         "navbox-subgroup-background-color": "#666",
         "navbox-subgroup-alt-background-color": "#777",
         "navbox-link-color": "#d3c4a9",
+        "main-menu-bg": "var(--accent-bg-color)",
+        "main-menu-heading": "var(--main-title-color)",
+        "main-menu-message-box-bg": "var(--primary-bg-color)",
+        "main-menu-message-box-text": "var(--text-color)",
+        "main-menu-link": "var(--primary-link-color)",
+        "main-menu-link-visited": "var(--primary-link-color)",
     }
 },
 {
@@ -50,6 +56,12 @@ export const themes = [{
         "navbox-subgroup-background-color": "#666",
         "navbox-subgroup-alt-background-color": "#777",
         "navbox-link-color": "#d3c4a9",
+        "main-menu-bg": "var(--accent-bg-color)",
+        "main-menu-heading": "var(--main-title-color)",
+        "main-menu-message-box-bg": "var(--primary-bg-color)",
+        "main-menu-message-box-text": "var(--text-color)",
+        "main-menu-link": "var(--primary-link-color)",
+        "main-menu-link-visited": "var(--primary-link-color)",
     }
 },
 {
@@ -77,6 +89,12 @@ export const themes = [{
         "navbox-subgroup-background-color": "#545D68",
         "navbox-subgroup-alt-background-color": "#626E7B",
         "navbox-link-color": "var(--primary-link-color)",
+        "main-menu-bg": "var(--accent-bg-color)",
+        "main-menu-heading": "var(--main-title-color)",
+        "main-menu-message-box-bg": "var(--primary-bg-color)",
+        "main-menu-message-box-text": "var(--text-color)",
+        "main-menu-link": "var(--primary-link-color)",
+        "main-menu-link-visited": "var(--primary-link-color)",
     }   
 }
 ]

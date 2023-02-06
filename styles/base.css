@@ -10,14 +10,13 @@ body {
     background-color: var(--toc-bg-color)
 }
 
-.vector-toc .vector-toc-link {
+.vector-main-menu, .vector-toc .vector-toc-link {
     color: var(--toc-link-color)
 }
 
 .vector-toc .vector-toc-list-item-active > .vector-toc-link, .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-expanded) > .vector-toc-link, .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > .vector-toc-link {
     color: var(--active-toc-link-color)
 }
-
 .vector-pinnable-header-label {
     color: var(--text-color);
 }
@@ -42,12 +41,25 @@ body {
     color: var(--expanded-toc-parent-color)
 }
 
-.vector-menu-content-list > :not(.selected) > * > * {
-    color: var(--active-toc-link-color)
+.vector-feature-page-tools-disabled .vector-main-menu-group .vector-menu-heading, .vector-feature-page-tools-disabled .vector-main-menu-action-item .vector-menu-heading {
+    color: var(--main-menu-heading)
 }
 
-.vector-menu-content-list > .selected > * > * {
-    color: var(--active-toc-link-color)
+.vector-feature-page-tools-disabled .vector-main-menu {
+    background-color: var(--main-menu-bg)
+}
+
+.vector-feature-page-tools-disabled .vector-main-menu-group .vector-menu-content li a {
+    color: var(--main-menu-link);
+}
+
+.vector-feature-page-tools-disabled .vector-main-menu-group .vector-menu-content li a:visited {
+    color: var(--main-menu-link-visited)
+}
+
+.mw-message-box {
+    background-color: var(--main-menu-message-box-bg);
+    color: var(--main-menu-message-box-text);
 }
 
 .mw-parser-output .hatnote {
