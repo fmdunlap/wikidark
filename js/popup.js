@@ -1,4 +1,5 @@
 import settings from "/js/settings.js";
+import { themes } from "./themes.js";
 
 function setSelectedTheme(themeName) {
     $('#theme-select').val(themeName);
@@ -25,6 +26,10 @@ function reloadWikiTabs() {
 }
 
 function setup() {
+    themes.forEach((theme) => {
+        console.log(theme)
+        $('<option value="' + theme.name + '">' + theme.name + '</option>').appendTo($('#theme-select'));
+    });
     settings.getSyncSettings().then(values => {
         setSelectedTheme(values['theme'])
     })

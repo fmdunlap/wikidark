@@ -7,7 +7,7 @@ function getSyncSettings() {
 }
 
 function saveSyncSettings(settings) {
-    chrome.storage.sync.set({'theme': settings['theme']});
+    chrome.storage.sync.set({ 'theme': settings['theme'] });
 }
 
 function saveTheme(theme) {

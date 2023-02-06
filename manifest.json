@@ -25,7 +25,7 @@
   },
   "web_accessible_resources": [
     {
-      "resources": ["styles/*", "images/*"],
+      "resources": ["styles/*", "images/*", "js/themes.js"],
       "matches": [
         "http://*.wikipedia.org/*",
         "https://*.wikipedia.org/*"        
