@@ -2,22 +2,27 @@ const DEFAULT_SETTINGS = {
     'theme': 'default'
 }
 
-function getSyncSettings() {
-    return chrome.storage.sync.get(DEFAULT_SETTINGS);
+async function getSyncSettings() {
+    return (await chrome.storage.sync.get(DEFAULT_SETTINGS));
 }
 
 function saveSyncSettings(settings) {
     chrome.storage.sync.set({ 'theme': settings['theme'] });
 }
 
-function saveTheme(theme) {
+function setActiveTheme(theme) {
     saveSyncSettings({
         'theme': theme
     });
 }
 
+async function getActiveTheme() {
+    return (await getSyncSettings())['theme'];
+}
+
 export default {
     getSyncSettings,
     saveSyncSettings,
-    saveTheme
+    setActiveTheme,
+    getActiveTheme
 };

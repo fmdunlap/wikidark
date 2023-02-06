@@ -22,23 +22,27 @@ function reloadWikiTabs() {
     })
 }
 
-function setup() {
+function addThemeRadioButtons() {
     themes.forEach((theme) => {
-        let themeRadioDiv = $('<div class="theme-radio-entry">')
-        themeRadioDiv.append($('<input type="radio" id="' + theme.name + '" name="theme-radio" value="' + theme.name + '">'));
-        themeRadioDiv.append($('<label for="' + theme.name + '">' + theme.name + '</label>'));
-        themeRadioDiv.append($('</div>'));
-        $('#theme-radio-container').append(themeRadioDiv);
+        let themeRadioEntry = $('<div class="theme-radio-entry">')
+        themeRadioEntry.append($('<input type="radio" id="' + theme.name + '" name="theme-radio" value="' + theme.name + '">'));
+        themeRadioEntry.append($('<label for="' + theme.name + '">' + theme.name + '</label>'));
+        themeRadioEntry.append($('</div>'));
+        $('#theme-radio-container').append(themeRadioEntry);
     });
-    settings.getSyncSettings().then(values => {
-        setSelectedTheme(values['theme'])
-    })
+}
+
+function onThemeChange() {
+    settings.setActiveTheme(getSelectedTheme());
+    reloadWikiTabs();
+}
+
+async function setup() {
+    addThemeRadioButtons()
+    setSelectedTheme(await settings.getActiveTheme())
     $(document).ready(() => {
-        $('input[type=radio][name=theme-radio]').on('change', () => {
-            settings.saveTheme(getSelectedTheme());
-            reloadWikiTabs();
-        })
+        $('input[type=radio][name=theme-radio]').on('change',onThemeChange)
     })
 }
 
-setup()
+await setup()
