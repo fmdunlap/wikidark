@@ -39,7 +39,8 @@
         "http://*.wikipedia.org/*",
         "https://*.wikipedia.org/*"
       ],
-      "js": ["js/jquery.js", "js/applyStyle.js"]
+      "js": ["js/jquery.js", "js/applyStyle.js"],
+      "run_at": "document_start"
     }
   ],
   "permissions": [
