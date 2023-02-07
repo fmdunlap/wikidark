@@ -43,8 +43,7 @@
       "run_at": "document_start"
     }
   ],
-  "permissions": [
-    "scripting",
+  "permissions":
     "storage",
     "activeTab"
   ],
