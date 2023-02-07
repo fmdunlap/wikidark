@@ -99,6 +99,40 @@ export const themes = [{
         "main-menu-link": "var(--primary-link-color)",
         "main-menu-link-visited": "var(--primary-link-color)",
     }   
+},
+{
+    name: 'Dracula',
+    colorCodes: {
+        "primary-bg-color": "#282a36", 
+        "accent-bg-color": "#44475a",
+        "toc-bg-color": "var(--accent-bg-color)",
+        "toc-link-color": "var(--dark-link-color)",
+        "active-toc-link-color": "#f8f8f2",
+        "toc-hide-link-color": "var(--dark-link-color)",
+        "expanded-toc-parent-color": "var(--active-toc-link-color)",
+        "text-color": "#AFBAC5",
+        "hatnote-color": "var(--text-color)",
+        "main-title-color": "var(--active-toc-link-color)",
+        "primary-link-color": "#bd93f9",
+        "dark-link-color": "var(--primary-link-color)",
+        "infobox-background": "var(--accent-bg-color)",
+        "reflist-link-color": "var(--primary-link-color)",
+        "navbox-background": "var(--primary-bg-color)",
+        "navbox-border": "var(--accent-bg-color)",
+        "navbox-title-background": "#0B0A10",
+        "navbox-group-header-color": "#161321",
+        "navbox-subgroup-header-color": "var(--navbox-border)",
+        "navbox-subgroup-background-color": "#2C2542",
+        "navbox-subgroup-alt-background-color": "#22212D",
+        "navbox-text": "var(--text-color)",
+        "navbox-link-color": "var(--primary-link-color)",
+        "main-menu-bg": "var(--accent-bg-color)",
+        "main-menu-heading": "var(--main-title-color)",
+        "main-menu-message-box-bg": "var(--primary-bg-color)",
+        "main-menu-message-box-text": "var(--text-color)",
+        "main-menu-link": "var(--primary-link-color)",
+        "main-menu-link-visited": "var(--primary-link-color)",
+    }   
 }
 ]
 
