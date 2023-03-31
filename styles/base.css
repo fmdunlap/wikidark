@@ -164,11 +164,11 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     color: var(--text-color);
 }
 
-/* .mw-ui-icon {
-    background-color: red;
-} */
-
 .mw-ui-icon:before {
+    filter: var(--filter-one);
+}
+
+.vector-dropdown > .vector-menu-heading:not(.mw-ui-icon-element):after {
     filter: var(--filter-one);
 }
 
