@@ -208,3 +208,7 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
 .mw-parser-output .navbox-even {
     background-color: var(--navbox-subgroup-alt-background-color) !important;
 }
+
+.catlinks {
+    background-color: var(--accent-bg-color);
+}
