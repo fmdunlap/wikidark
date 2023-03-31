@@ -2,6 +2,10 @@ body {
     background-color: var(--accent-bg-color)
 }
 
+a {
+    color: var(--primary-link-color)
+}
+
 .mw-page-container {
     background-color: var(--primary-bg-color)
 }
@@ -10,13 +14,17 @@ body {
     background-color: var(--toc-bg-color)
 }
 
-.vector-main-menu, .vector-toc .vector-toc-link {
+.vector-main-menu,
+.vector-toc .vector-toc-link {
     color: var(--toc-link-color)
 }
 
-.vector-toc .vector-toc-list-item-active > .vector-toc-link, .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-expanded) > .vector-toc-link, .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > .vector-toc-link {
+.vector-toc .vector-toc-list-item-active>.vector-toc-link,
+.vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-expanded)>.vector-toc-link,
+.vector-toc .vector-toc-list-item-active.vector-toc-level-1-active>.vector-toc-link {
     color: var(--active-toc-link-color)
 }
+
 .vector-pinnable-header-label {
     color: var(--text-color);
 }
@@ -25,7 +33,8 @@ body {
     color: var(--toc-hide-link-color);
 }
 
-.vector-pinnable-header-toggle-button:before, .vector-pinnable-header-toggle-button:after { 
+.vector-pinnable-header-toggle-button:before,
+.vector-pinnable-header-toggle-button:after {
     color: var(--active-toc-link-color)
 }
 
@@ -37,11 +46,12 @@ body {
     color: var(--text-color)
 }
 
-.vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-active) > .vector-toc-link {
+.vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-active)>.vector-toc-link {
     color: var(--expanded-toc-parent-color)
 }
 
-.vector-feature-page-tools-disabled .vector-main-menu-group .vector-menu-heading, .vector-feature-page-tools-disabled .vector-main-menu-action-item .vector-menu-heading {
+.vector-feature-page-tools-disabled .vector-main-menu-group .vector-menu-heading,
+.vector-feature-page-tools-disabled .vector-main-menu-action-item .vector-menu-heading {
     color: var(--main-menu-heading)
 }
 
@@ -74,11 +84,18 @@ span.mw-page-title-main {
     color: var(--primary-link-color);
 }
 
-.mw-parser-output p, .mw-parser-output h1, .mw-parser-output h2, .mw-parser-output h3, .mw-parser-output h4, .mw-parser-output h5, .mw-parser-output li {
+.mw-parser-output p,
+.mw-parser-output h1,
+.mw-parser-output h2,
+.mw-parser-output h3,
+.mw-parser-output h4,
+.mw-parser-output h5,
+.mw-parser-output li {
     color: var(--text-color)
 }
 
-.mw-parser-output a.external, a.text {
+.mw-parser-output a.external,
+a.text {
     color: var(--dark-link-color)
 }
 
@@ -99,7 +116,7 @@ span.mw-page-title-main {
     color: var(--primary-link-color)
 }
 
-.infobox th > a {
+.infobox th>a {
     color: var(--dark-link-color)
 }
 
@@ -127,7 +144,8 @@ div.reflist a {
     color: var(--reflist-link-color)
 }
 
-div.reflist a.extiw, div.reflist a.external {
+div.reflist a.extiw,
+div.reflist a.external {
     color: var(--reflist-link-color);
 }
 
@@ -139,7 +157,10 @@ div.reflist a.external {
     padding-right: 1em;
 }
 
-img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
+img.mw-logo-wordmark,
+img.mw-logo-tagline,
+#mw-sidebar-button,
+#p-personal {
     filter: invert(1)
 }
 
@@ -152,7 +173,8 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     background: var(--sidebar-bg);
 }
 
-.mw-parser-output .sidebar-pretitle, .mw-parser-output .sidebar-list-title-c {
+.mw-parser-output .sidebar-pretitle,
+.mw-parser-output .sidebar-list-title-c {
     color: var(--sidebar-title);
 }
 
@@ -160,7 +182,8 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     color: var(--primary-link-color)
 }
 
-.vector-menu-tabs .mw-list-item.selected a, .vector-menu-tabs .mw-list-item.selected a:visited {
+.vector-menu-tabs .mw-list-item.selected a,
+.vector-menu-tabs .mw-list-item.selected a:visited {
     color: var(--dark-link-color)
 }
 
@@ -172,11 +195,12 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     filter: var(--filter-one);
 }
 
-.vector-dropdown > .vector-menu-heading:not(.mw-ui-icon-element):after {
+.vector-dropdown>.vector-menu-heading:not(.mw-ui-icon-element):after {
     filter: var(--filter-one);
 }
 
-.mw-parser-output .side-box, .mw-parser-output .navbox {
+.mw-parser-output .side-box,
+.mw-parser-output .navbox {
     background-color: var(--navbox-background) !important;
     border: 1px solid var(--navbox-border) !important;
 }
@@ -193,11 +217,14 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     background-color: var(--navbox-title-background) !important;
 }
 
-.mw-parser-output .navbox-abovebelow, .mw-parser-output .navbox-group, .mw-parser-output .navbox-subgroup .navbox-title {
+.mw-parser-output .navbox-abovebelow,
+.mw-parser-output .navbox-group,
+.mw-parser-output .navbox-subgroup .navbox-title {
     background-color: var(--navbox-group-header-color) !important;
 }
 
-.mw-parser-output .navbox-subgroup .navbox-group, .mw-parser-output .navbox-subgroup .navbox-aboveb {
+.mw-parser-output .navbox-subgroup .navbox-group,
+.mw-parser-output .navbox-subgroup .navbox-aboveb {
     background-color: var(--navbox-subgroup-header-color) !important;
 }
 
@@ -217,14 +244,94 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     color: var(--text-color);
 }
 
-.vector-dropdown .vector-dropdown-content, .vector-dropdown > .vector-menu-content {
+.vector-dropdown .vector-dropdown-content,
+.vector-dropdown>.vector-menu-content {
     background-color: var(--accent-bg-color)
 }
 
-.vector-feature-page-tools-enabled .vector-pinnable-element .vector-menu-heading, .vector-dropdown-content .vector-menu-heading {
+.vector-feature-page-tools-enabled .vector-pinnable-element .vector-menu-heading,
+.vector-dropdown-content .vector-menu-heading {
     color: var(--text-color);
 }
 
-.vector-feature-page-tools-enabled .vector-pinnable-element .mw-list-item a, .vector-dropdown-content .mw-list-item a, .vector-dropdown .mw-list-item a:not(.mw-selflink):visited, .vector-dropdown .mw-list-item a:not(.mw-selflink) {
+.vector-feature-page-tools-enabled .vector-pinnable-element .mw-list-item a,
+.vector-dropdown-content .mw-list-item a,
+.vector-dropdown .mw-list-item a:not(.mw-selflink):visited,
+.vector-dropdown .mw-list-item a:not(.mw-selflink) {
     color: var(--primary-link-color);
+}
+
+.uls-menu,
+.uls-search,
+.uls-lcd,
+#uls-settings-block.uls-settings-block--vector-2022.uls-settings-block--with-add-languages {
+    background-color: var(--accent-bg-color);
+}
+
+#uls-settings-block.uls-settings-block--vector-2022>button.uls-language-settings-button,
+.oo-ui-image-progressive.oo-ui-icon-edit,
+.mw-ui-icon-edit-progressive:before,
+.oo-ui-image-progressive.oo-ui-icon-add, .mw-ui-icon-add-progressive:before,
+#uls-settings-block.uls-settings-block--vector-2022 > button.uls-add-languages-button,
+.uls-language-actions-title,
+.uls-search-label {
+    filter: var(--filter-one);
+}
+
+.skin-vector .uls-lcd-region-title {
+    color: var(--text-color);
+}
+
+.uls-language-block a,
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button {
+ color: var(--primary-link-color)
+}
+
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
+    color: var(--dark-link-color);
+}
+
+.uls-language-block a:hover {
+    background-color: var(--primary-bg-color)
+}
+
+#languagesettings-settings-panel,
+#languagesettings-settings-panel h4,
+.uls-language-settings-close-block,
+.uls-ui-languages p,
+.checkbox,
+.checkbox strong,
+.languagesettings-menu h1,
+.languagesettings-menu .menu-section.active,
+.languagesettings-menu .menu-section,
+.languagesettings-menu .menu-section .settings-text,
+.uls-font-label strong,
+.uls-font-label,
+.uls-input-settings-disable-info, .uls-input-settings-no-inputmethods,
+.uls-input-settings .uls-input-settings-inputmethods-list {
+    background-color: var(--accent-bg-color);
+    color: var(--text-color);
+}
+
+.languagesettings-menu .menu-section:hover,
+.languagesettings-menu .menu-section:hover .settings-text,
+#languagesettings-panels .mw-ui-pressed,
+.mw-ui-button.mw-ui-progressive:not(:disabled) {
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+}
+
+.mw-ui-button.mw-ui-progressive:disabled, .mw-ui-button.mw-ui-progressive:not(:disabled):hover {
+    background-color: var(--accent-bg-color);
+    color: var(--text-color);
+
+}
+
+.uls-font-item:nth-child(n) {
+    background-color: var(--accent-bg-color);
+}
+
+.mw-ui-button.mw-ui-quiet.mw-ui-progressive,
+.mw-ui-button.mw-ui-quiet.mw-ui-destructive {
+    color: var(--text-color);
 }
