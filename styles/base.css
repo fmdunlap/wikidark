@@ -1,8 +1,17 @@
 body {
-    background-color: var(--accent-bg-color)
+    background-color: var(--accent-bg-color);
+    color: var(--text-color);
 }
 
-a {
+h1, h2, h3, h4, h5, h6 {
+    color: var(--text-color)
+}
+
+ul li::marker {
+    color: var(--text-color);
+}
+
+a, .mw-parser-output a.extiw, .mw-parser-output a.external {
     color: var(--primary-link-color)
 }
 
@@ -333,5 +342,10 @@ img.mw-logo-tagline,
 
 .mw-ui-button.mw-ui-quiet.mw-ui-progressive,
 .mw-ui-button.mw-ui-quiet.mw-ui-destructive {
+    color: var(--text-color);
+}
+
+#pagehistory li.selected {
+    background-color: var(--accent-bg-color);
     color: var(--text-color);
 }
