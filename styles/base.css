@@ -368,3 +368,7 @@ img.mw-logo-tagline,
 .wikitable > tr > th, .wikitable > * > tr > th {
     background-color: var(--accent-bg-color);
 }
+
+.mwe-math-fallback-image-inline {
+    filter: var(--filter-one);
+}
