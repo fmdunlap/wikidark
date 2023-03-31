@@ -216,3 +216,15 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
 .mw-footer li {
     color: var(--text-color);
 }
+
+.vector-dropdown .vector-dropdown-content, .vector-dropdown > .vector-menu-content {
+    background-color: var(--accent-bg-color)
+}
+
+.vector-feature-page-tools-enabled .vector-pinnable-element .vector-menu-heading, .vector-dropdown-content .vector-menu-heading {
+    color: var(--text-color);
+}
+
+.vector-feature-page-tools-enabled .vector-pinnable-element .mw-list-item a, .vector-dropdown-content .mw-list-item a, .vector-dropdown .mw-list-item a:not(.mw-selflink):visited, .vector-dropdown .mw-list-item a:not(.mw-selflink) {
+    color: var(--primary-link-color);
+}
