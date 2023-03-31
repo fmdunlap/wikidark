@@ -143,6 +143,10 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     filter: invert(1)
 }
 
+.mw-page-container a {
+    color: var(--primary-link-color)
+}
+
 .mw-parser-output .sidebar {
     /* background: var(--sidebar-bg) !important; */
     background: var(--sidebar-bg);
