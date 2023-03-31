@@ -212,3 +212,7 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
 .catlinks {
     background-color: var(--accent-bg-color);
 }
+
+.mw-footer li {
+    color: var(--text-color);
+}
