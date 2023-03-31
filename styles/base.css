@@ -372,3 +372,15 @@ img.mw-logo-tagline,
 .mwe-math-fallback-image-inline {
     filter: var(--filter-one);
 }
+
+.sidebar-title {
+    background-color: var(--accent-bg-color) !important;
+}
+
+.sidebar-list-title {
+    background-color: var(--half-dark-accent) !important;
+}
+
+.sidebar-heading {
+    background-color: var(--dark-accent) !important;
+}

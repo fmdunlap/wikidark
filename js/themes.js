@@ -3,6 +3,8 @@ export const themes = [{
     colorCodes: {
         "primary-bg-color": "#333",
         "accent-bg-color": "#555",
+        "dark-accent": "#222",
+        "half-dark-accent": "#444",
         "toc-bg-color": "var(--accent-bg-color)",
         "toc-link-color": "var(--dark-link-color)",
         "active-toc-link-color": "#CCC",
@@ -42,6 +44,8 @@ export const themes = [{
     colorCodes: {
         "primary-bg-color": "#002b36",
         "accent-bg-color": "#073642",
+        "dark-accent": "#001d24",
+        "half-dark-accent": "#034554",
         "toc-bg-color": "var(--accent-bg-color)",
         "toc-link-color": "var(--dark-link-color)",
         "active-toc-link-color": "#6c71c4",
@@ -81,6 +85,8 @@ export const themes = [{
     colorCodes: {
         "primary-bg-color": "#21262E",
         "accent-bg-color": "#434C56",
+        "dark-accent": "#111317",
+        "half-dark-accent": "#101e38",
         "toc-bg-color": "var(--accent-bg-color)",
         "toc-link-color": "var(--dark-link-color)",
         "active-toc-link-color": "#CDD9E5",
@@ -120,6 +126,8 @@ export const themes = [{
     colorCodes: {
         "primary-bg-color": "#282a36", 
         "accent-bg-color": "#44475a",
+        "dark-accent": "#161821",
+        "half-dark-accent": "#393d57",
         "toc-bg-color": "var(--accent-bg-color)",
         "toc-link-color": "var(--dark-link-color)",
         "active-toc-link-color": "#f8f8f2",
