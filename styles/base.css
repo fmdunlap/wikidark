@@ -29,8 +29,8 @@ body {
     color: var(--active-toc-link-color)
 }
 
-.vector-toc-pinned #vector-toc-pinned-container .vector-toc:after {
-    display: none;
+#vector-toc-pinned-container .vector-toc:after {
+    content: none;
 }
 
 .vector-body-before-content {
