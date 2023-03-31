@@ -40,7 +40,7 @@
         "https://*.wikipedia.org/*"
       ],
       "js": ["js/jquery.js", "js/applyStyle.js"],
-      "run_at": "document_start"
+      "run_at": "document_end"
     }
   ],
   "permissions": [

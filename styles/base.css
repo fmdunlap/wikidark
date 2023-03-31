@@ -143,6 +143,35 @@ img.mw-logo-wordmark, img.mw-logo-tagline, #mw-sidebar-button, #p-personal {
     filter: invert(1)
 }
 
+.mw-parser-output .sidebar {
+    /* background: var(--sidebar-bg) !important; */
+    background: var(--sidebar-bg);
+}
+
+.mw-parser-output .sidebar-pretitle, .mw-parser-output .sidebar-list-title-c {
+    color: var(--sidebar-title);
+}
+
+.vector-menu-tabs .mw-list-item a {
+    color: var(--primary-link-color)
+}
+
+.vector-menu-tabs .mw-list-item.selected a, .vector-menu-tabs .mw-list-item.selected a:visited {
+    color: var(--dark-link-color)
+}
+
+.vector-menu-heading-label {
+    color: var(--text-color);
+}
+
+/* .mw-ui-icon {
+    background-color: red;
+} */
+
+.mw-ui-icon:before {
+    filter: var(--filter-one);
+}
+
 .mw-parser-output .side-box, .mw-parser-output .navbox {
     background-color: var(--navbox-background) !important;
     border: 1px solid var(--navbox-border) !important;

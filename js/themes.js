@@ -30,6 +30,11 @@ export const themes = [{
         "main-menu-message-box-text": "var(--text-color)",
         "main-menu-link": "var(--primary-link-color)",
         "main-menu-link-visited": "var(--primary-link-color)",
+        "sidebar-bg": "var(--accent-bg-color)",
+        "sidebar-title": "var(--text-color)",
+    },
+    filterCodes : {
+        "filter-one": "invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(105%) contrast(102%)",
     }
 },
 {
@@ -64,6 +69,11 @@ export const themes = [{
         "main-menu-message-box-text": "var(--text-color)",
         "main-menu-link": "var(--primary-link-color)",
         "main-menu-link-visited": "var(--primary-link-color)",
+        "sidebar-bg": "var(--accent-bg-color)",
+        "sidebar-title": "var(--text-color)",
+    },
+    filterCodes : {
+        "filter-one": "invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(105%) contrast(102%)",
     }
 },
 {
@@ -98,7 +108,12 @@ export const themes = [{
         "main-menu-message-box-text": "var(--text-color)",
         "main-menu-link": "var(--primary-link-color)",
         "main-menu-link-visited": "var(--primary-link-color)",
-    }   
+        "sidebar-bg": "var(--accent-bg-color)",
+        "sidebar-title": "var(--text-color)",
+    },
+    filterCodes : {
+        "filter-one": "invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(105%) contrast(102%)",
+    }
 },
 {
     name: 'Dracula',
@@ -132,7 +147,12 @@ export const themes = [{
         "main-menu-message-box-text": "var(--text-color)",
         "main-menu-link": "var(--primary-link-color)",
         "main-menu-link-visited": "var(--primary-link-color)",
-    }   
+        "sidebar-bg": "var(--accent-bg-color)",
+        "sidebar-title": "var(--text-color)",
+    },
+    filterCodes : {
+        "filter-one": "invert(100%) sepia(100%) saturate(0%) hue-rotate(172deg) brightness(105%) contrast(102%)",
+    }
 }
 ]
 
