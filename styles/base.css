@@ -3,7 +3,12 @@ body {
     color: var(--text-color);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: var(--text-color)
 }
 
@@ -11,7 +16,9 @@ ul li::marker {
     color: var(--text-color);
 }
 
-a, .mw-parser-output a.extiw, .mw-parser-output a.external {
+a,
+.mw-parser-output a.extiw,
+.mw-parser-output a.external {
     color: var(--primary-link-color)
 }
 
@@ -280,8 +287,9 @@ img.mw-logo-tagline,
 #uls-settings-block.uls-settings-block--vector-2022>button.uls-language-settings-button,
 .oo-ui-image-progressive.oo-ui-icon-edit,
 .mw-ui-icon-edit-progressive:before,
-.oo-ui-image-progressive.oo-ui-icon-add, .mw-ui-icon-add-progressive:before,
-#uls-settings-block.uls-settings-block--vector-2022 > button.uls-add-languages-button,
+.oo-ui-image-progressive.oo-ui-icon-add,
+.mw-ui-icon-add-progressive:before,
+#uls-settings-block.uls-settings-block--vector-2022>button.uls-add-languages-button,
 .uls-language-actions-title,
 .uls-search-label {
     filter: var(--filter-one);
@@ -293,10 +301,10 @@ img.mw-logo-tagline,
 
 .uls-language-block a,
 .oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button {
- color: var(--primary-link-color)
+    color: var(--primary-link-color)
 }
 
-.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover {
+.oo-ui-buttonElement-frameless.oo-ui-widget-enabled.oo-ui-flaggedElement-progressive>.oo-ui-buttonElement-button:hover {
     color: var(--dark-link-color);
 }
 
@@ -316,7 +324,8 @@ img.mw-logo-tagline,
 .languagesettings-menu .menu-section .settings-text,
 .uls-font-label strong,
 .uls-font-label,
-.uls-input-settings-disable-info, .uls-input-settings-no-inputmethods,
+.uls-input-settings-disable-info,
+.uls-input-settings-no-inputmethods,
 .uls-input-settings .uls-input-settings-inputmethods-list {
     background-color: var(--accent-bg-color);
     color: var(--text-color);
@@ -330,7 +339,8 @@ img.mw-logo-tagline,
     color: var(--text-color);
 }
 
-.mw-ui-button.mw-ui-progressive:disabled, .mw-ui-button.mw-ui-progressive:not(:disabled):hover {
+.mw-ui-button.mw-ui-progressive:disabled,
+.mw-ui-button.mw-ui-progressive:not(:disabled):hover {
     background-color: var(--accent-bg-color);
     color: var(--text-color);
 
@@ -348,4 +358,13 @@ img.mw-logo-tagline,
 #pagehistory li.selected {
     background-color: var(--accent-bg-color);
     color: var(--text-color);
+}
+
+.wikitable {
+    color: var(--text-color);
+    background-color: var(--primary-bg-color);
+}
+
+.wikitable > tr > th, .wikitable > * > tr > th {
+    background-color: var(--accent-bg-color);
 }
